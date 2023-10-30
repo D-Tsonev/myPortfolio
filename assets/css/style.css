@@ -10,13 +10,11 @@
   margin: 0;
 }
 
-
 body{
   background: black; 
   padding: 0;
 
 }
-
 
 nav{
   display: flex;
@@ -31,23 +29,20 @@ nav{
     margin:30px 30px;
   }
 
-header a {
+li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  transition: all 0.3s ease 0s;
   font-size: 18px;
   font-family: 'Courier New', Courier, monospace;
 }
 
-header a:hover {
+a:hover {
   color: #799a97;
 }
 
 .logo{
   width: 160px;
 }
-
-
 
 h1 {
   font-family: 'Source Code Pro', monospace;
@@ -56,8 +51,6 @@ h1 {
   font-size: 42px;
   font-weight: bold;
 }
-
-
 
 p{
   font-family: 'Space Grotesk', sans-serif;
@@ -69,7 +62,7 @@ p{
   align-items: start;
   flex-direction: column;
   background-color: rgb(225, 214, 214);
-  margin-top:40px;
+  /* margin-top:40px; */
   padding: 0;
   padding-bottom: 20px;
 }
@@ -83,13 +76,12 @@ p{
 }
 
 
-
 .contact {
-  display:flex; 
-  align-items: start;
-  flex-direction: column;
-  background-color: rgb(225, 214, 214);
-  margin-top:40px;
-  padding: 0;
-  padding-bottom: 20px;
-}
+  background-color: rgb(64, 191, 109)}
+
+
+
+
+
+
+
