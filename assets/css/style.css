@@ -33,6 +33,7 @@ li a {
   font-family: "Courier New", Courier, monospace;
 }
 
+
 a:hover {
   color: #799a97;
 }
@@ -124,12 +125,12 @@ a {
 .headingg {
   background-color: var(--main-bakcground-colour);
   padding: 15px;
-  height: 25px;
   color: white;
-  font-size: 15px;
+  font-size: 18px;
   position: absolute;
-  
+  font-family: "Courier New", Courier, monospace;
 }
+  
 
 #projects {
   /* margin: 0px 5%; */
@@ -148,7 +149,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 5px;
-  /* cursor: pointer; */
+
   display: grid;
   align-content: end;
 
@@ -178,3 +179,18 @@ a {
   grid-area: project5;
   background-image: url("../images/02-run-buddy.jpg");
 }
+
+
+@media only screen and (max-width: 600px) {
+
+  #projects {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "project1"
+      "project2"
+      "project3"
+      "project4"
+      "project5"
+    ;
+  } }
