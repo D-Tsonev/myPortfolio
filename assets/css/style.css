@@ -12,15 +12,10 @@
 
 
 body{
-  background: black;
-  color: #fff;
+  background: black; 
+  padding: 0;
 
 }
-
-
-/* #header {
-  padding: 5% 5%;
-} */
 
 
 nav{
@@ -40,7 +35,8 @@ header a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   transition: all 0.3s ease 0s;
-  font-size: 16px;
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 header a:hover {
@@ -51,18 +47,49 @@ header a:hover {
   width: 160px;
 }
 
-/* .name{
-  color:rgb(233, 233, 215);
-  font-weight:bolder;
-  font-size: 48px;
-  line-height:40px;
-} */
+
 
 h1 {
   font-family: 'Source Code Pro', monospace;
-  text-align: center;
+  margin-top: 70px; 
+  padding-left: 60px;
+  font-size: 42px;
+  font-weight: bold;
 }
+
+
 
 p{
   font-family: 'Space Grotesk', sans-serif;
+}
+
+
+.about-me {
+  display:flex; 
+  align-items: start;
+  flex-direction: column;
+  background-color: rgb(225, 214, 214);
+  margin-top:40px;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.about {
+  width: 40%;
+  justify-content: flex-end;
+  padding-left: 60px;
+  margin: 20px;
+  padding: 20px;
+}
+
+
+
+.contact {
+  display:flex; 
+  align-items: start;
+  flex-direction: column;
+  background-color: rgb(225, 214, 214);
+  margin-top:40px;
+  padding: 0;
+  padding-bottom: 20px;
 }
