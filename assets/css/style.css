@@ -1,64 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&family=Space+Grotesk&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&family=Space+Grotesk&display=swap");
 
 :root {
   --main-bakcground-colour: rgb(0, 0, 0);
 }
-
-*{
+* {
   margin: 10px;
 }
 
-
-body{
-  background:var(--main-bakcground-colour); 
+body {
+  background: var(--main-bakcground-colour);
   padding: 0;
   margin: 20px;
-
 }
 
-nav{
+nav {
   display: flex;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  }
+}
 
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin:30px 30px;
-  }
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 30px 30px;
+}
 
 li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 18px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 a:hover {
   color: #799a97;
 }
 
-.logo{
+.logo {
   width: 160px;
 }
 
 h1 {
-  font-family: 'Source Code Pro', monospace;
-  margin-top: 70px; 
+  font-family: "Source Code Pro", monospace;
+  margin-top: 70px;
   padding-left: 60px;
   font-size: 42px;
   font-weight: bold;
 }
 
-p{
-  font-family: 'Space Grotesk', sans-serif;
+p {
+  font-family: "Space Grotesk", sans-serif;
 }
 
-
 .about-me {
-  display:flex; 
+  display: flex;
   align-items: start;
   flex-direction: column;
   background-color: rgb(225, 214, 214);
@@ -74,9 +70,9 @@ p{
   padding: 20px;
 }
 
-
 .contact {
-  background-color: var(--main-bakcground-colour)}
+  background-color: var(--main-bakcground-colour);
+}
 
 .projects {
   background-color: var(--main-bakcground-colour);
@@ -84,11 +80,10 @@ p{
   flex-wrap: wrap;
 }
 
-.project1{
-    width: 100%;
-    height: 500px;
-    background-image: url("../images/02-portfolio-1.jpg");
-    
+.project1 {
+  width: 100%;
+  height: 500px;
+  background-image: url("../images/02-portfolio-1.jpg");
 }
 
 a {
@@ -104,36 +99,82 @@ a {
   position: relative;
 }
 
-.project2-5 a{
+.project2-5 a {
   width: calc(50% - 10px);
   height: 350px;
   margin: 5px;
 }
 
 .project2-5 a:nth-child(1) {
-  background-image: url('../images/02-portfolio-2.jpg'); 
+  background-image: url("../images/02-portfolio-2.jpg");
 }
 
 .project2-5 a:nth-child(2) {
-  background-image: url('../images/02-portfolio-3.jpg'); 
+  background-image: url("../images/02-portfolio-3.jpg");
 }
 
 .project2-5 a:nth-child(3) {
-  background-image: url('../images/02-portfolio-4.jpg'); 
+  background-image: url("../images/02-portfolio-4.jpg");
 }
 
 .project2-5 a:nth-child(4) {
-background-image: url("../images/02-run-buddy.jpg"); }
-
-.project-info {
-  position: absolute;
-  bottom: 5px;
-  left: 5px;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 5px;
+  background-image: url("../images/02-run-buddy.jpg");
 }
 
-.project-info h3 {
-  margin: 0;
-  font-size: 14px;
-} 
+.headingg {
+  background-color: var(--main-bakcground-colour);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  
+}
+
+#projects {
+  /* margin: 0px 5%; */
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-areas:
+  "project1 project1 "
+  "project2 project3"
+  "project4 project5"
+  ;
+}
+
+.projects{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  /* cursor: pointer; */
+  display: grid;
+  align-content: end;
+
+}
+
+#project1{
+  grid-area: project1;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#project2{
+  grid-area: project2;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#project3{
+  grid-area: project3;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#project4{
+  grid-area: project4;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#project5{
+  grid-area: project5;
+  background-image: url("../images/02-run-buddy.jpg");
+}
