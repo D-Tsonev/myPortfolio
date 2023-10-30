@@ -1,17 +1,16 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&family=Space+Grotesk&display=swap');
 
-*{
-  margin: 0;
+:root {
+  --main-bakcground-colour: rgb(0, 0, 0);
 }
 
+*{
+  margin: 10px;
+}
+
+
 body{
-  background: black; 
+  background:var(--main-bakcground-colour); 
   padding: 0;
   margin: 20px;
 
@@ -24,7 +23,7 @@ nav{
   flex-wrap: wrap;
   }
 
-  nav ul li{
+nav ul li{
     display: inline-block;
     list-style: none;
     margin:30px 30px;
@@ -63,7 +62,6 @@ p{
   align-items: start;
   flex-direction: column;
   background-color: rgb(225, 214, 214);
-  /* margin-top:40px; */
   padding: 0;
   padding-bottom: 20px;
 }
@@ -78,10 +76,10 @@ p{
 
 
 .contact {
-  background-color: rgb(1, 15, 6)}
+  background-color: var(--main-bakcground-colour)}
 
 .projects {
-  background-color: rgb(5, 0, 1);
+  background-color: var(--main-bakcground-colour);
   display: flex;
   flex-wrap: wrap;
 }
@@ -103,6 +101,7 @@ a {
   flex-wrap: wrap;
   width: 100%;
   margin: 5px;
+  position: relative;
 }
 
 .project2-5 a{
@@ -124,6 +123,17 @@ a {
 }
 
 .project2-5 a:nth-child(4) {
+background-image: url("../images/02-run-buddy.jpg"); }
 
-  background-image: url("../images/02-run-buddy.jpg"); 
+.project-info {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px;
 }
+
+.project-info h3 {
+  margin: 0;
+  font-size: 14px;
+} 
