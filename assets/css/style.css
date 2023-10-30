@@ -2,7 +2,9 @@
 
 :root {
   --main-bakcground-colour: rgb(0, 0, 0);
+  --navbar-colour:rgb(225, 214, 214)
 }
+
 * {
   margin: 10px;
 }
@@ -28,7 +30,7 @@ nav ul li {
 
 li a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: var(--navbar-colour);
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
 }
@@ -52,13 +54,14 @@ h1 {
 
 p {
   font-family: "Space Grotesk", sans-serif;
+  font-size: 28px;
 }
 
 .about-me {
   display: flex;
   align-items: start;
   flex-direction: column;
-  background-color: rgb(225, 214, 214);
+  background-color: var(--navbar-colour);
   padding: 0;
   padding-bottom: 20px;
 }
@@ -75,57 +78,10 @@ p {
   background-color: var(--main-bakcground-colour);
 }
 
-.projects {
-  background-color: var(--main-bakcground-colour);
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.project1 {
-  width: 100%;
-  height: 500px;
-  background-image: url("../images/02-portfolio-1.jpg");
-}
-
-a {
-  display: block;
-  background-size: cover;
-}
-
-.project2-5 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 5px;
-  position: relative;
-}
-
-.project2-5 a {
-  width: calc(50% - 10px);
-  height: 350px;
-  margin: 5px;
-}
-
-.project2-5 a:nth-child(1) {
-  background-image: url("../images/02-portfolio-2.jpg");
-}
-
-.project2-5 a:nth-child(2) {
-  background-image: url("../images/02-portfolio-3.jpg");
-}
-
-.project2-5 a:nth-child(3) {
-  background-image: url("../images/02-portfolio-4.jpg");
-}
-
-.project2-5 a:nth-child(4) {
-  background-image: url("../images/02-run-buddy.jpg");
-}
-
 .headingg {
   background-color: var(--main-bakcground-colour);
   padding: 15px;
-  color: white;
+  color: var(--navbar-colour);
   font-size: 18px;
   position: absolute;
   font-family: "Courier New", Courier, monospace;
@@ -149,7 +105,6 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 5px;
-
   display: grid;
   align-content: end;
 
