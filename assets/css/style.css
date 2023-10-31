@@ -2,7 +2,7 @@
 
 :root {
   --main-bakcground-colour: rgb(0, 0, 0);
-  --navbar-colour:rgb(225, 214, 214)
+  --navbar-colour: rgb(225, 214, 214);
 }
 
 * {
@@ -35,7 +35,6 @@ li a {
   font-family: "Courier New", Courier, monospace;
 }
 
-
 a:hover {
   color: #799a97;
 }
@@ -64,6 +63,7 @@ p {
   background-color: var(--navbar-colour);
   padding: 0;
   padding-bottom: 20px;
+  border-radius: 10px;
 }
 
 .about {
@@ -85,59 +85,60 @@ p {
   font-size: 18px;
   position: absolute;
   font-family: "Courier New", Courier, monospace;
+  border-radius: 10px;
 }
-  
 
 #projects {
   /* margin: 0px 5%; */
   display: grid;
   grid-template-rows: 300px 300px 300px;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "project1 project1 "
-  "project2 project3"
-  "project4 project5"
-  ;
+    "project1 project1 "
+    "project2 project3"
+    "project4 project5";
 }
 
-.projects{
+.projects {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 5px;
   display: grid;
   align-content: end;
-
 }
 
-#project1{
+#project1 {
   grid-area: project1;
+  border-radius: 10px;
   background-image: url("../images/02-portfolio-1.jpg");
 }
 
-#project2{
+#project2 {
   grid-area: project2;
+  border-radius: 10px;
   background-image: url("../images/02-portfolio-2.jpg");
 }
 
-#project3{
+#project3 {
   grid-area: project3;
+  border-radius: 10px;
   background-image: url("../images/02-portfolio-3.jpg");
 }
 
-#project4{
+#project4 {
   grid-area: project4;
+  border-radius: 10px;
   background-image: url("../images/02-portfolio-4.jpg");
 }
 
-#project5{
+#project5 {
   grid-area: project5;
+  border-radius: 10px;
   background-image: url("../images/02-run-buddy.jpg");
 }
 
-
 @media only screen and (max-width: 600px) {
-
   #projects {
     grid-template-rows: 300px 300px 300px 300px 300px;
     grid-template-columns: 1fr;
@@ -146,6 +147,6 @@ p {
       "project2"
       "project3"
       "project4"
-      "project5"
-    ;
-  } }
+      "project5";
+  }
+}
