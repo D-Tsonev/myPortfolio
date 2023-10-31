@@ -40,7 +40,7 @@ a:hover {
 }
 
 .logo {
-  width: 160px;
+  width: 260px;
 }
 /* about section */
 h1 {
@@ -95,7 +95,7 @@ p {
 #projects {
   /* margin: 0px 5%; */
   display: grid;
-  grid-template-rows: 300px 300px 300px;
+  grid-template-rows: 400px 300px 300px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "project1 project1 "
