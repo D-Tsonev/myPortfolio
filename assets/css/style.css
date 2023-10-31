@@ -78,7 +78,7 @@ p {
   background-color: var(--main-bakcground-colour);
 }
 
-.headingg {
+.heading {
   background-color: var(--main-bakcground-colour);
   padding: 15px;
   color: var(--navbar-colour);
@@ -140,7 +140,7 @@ p {
 
 @media only screen and (max-width: 600px) {
   #projects {
-    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-rows: 200px 200px 200px 200px 200px;
     grid-template-columns: 1fr;
     grid-template-areas:
       "project1"
@@ -149,4 +149,17 @@ p {
       "project4"
       "project5";
   }
+  h1{
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .heading{
+    font-size: 12px;
+  }
+  li a{
+    font-size: 8px;
+  }
+  
 }
