@@ -14,18 +14,18 @@ body {
   padding: 0;
   margin: 20px;
 }
-
+/* top and bottom hav bars  */
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 30px 30px;
+  margin: 25px 25px;
 }
 
 li a {
@@ -42,7 +42,7 @@ a:hover {
 .logo {
   width: 160px;
 }
-
+/* about section */
 h1 {
   font-family: "Source Code Pro", monospace;
   margin-top: 70px;
@@ -74,10 +74,14 @@ p {
   padding: 20px;
 }
 
-.contact {
-  background-color: var(--main-bakcground-colour);
+.header-section {
+  color: var(--navbar-colour);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 35px;
+  margin: 35px 35px;
 }
 
+/* project section */
 .heading {
   background-color: var(--main-bakcground-colour);
   padding: 15px;
@@ -138,6 +142,14 @@ p {
   background-image: url("../images/02-run-buddy.jpg");
 }
 
+/* contact me section */
+
+.contact {
+  background-color: var(--main-bakcground-colour);
+}
+
+/* Responsive media query*/
+
 @media only screen and (max-width: 600px) {
   #projects {
     grid-template-rows: 200px 200px 200px 200px 200px;
@@ -149,17 +161,19 @@ p {
       "project4"
       "project5";
   }
-  h1{
+  h1 {
     font-size: 14px;
   }
   p {
     font-size: 12px;
   }
-  .heading{
+  .heading {
     font-size: 12px;
   }
-  li a{
+  li a {
     font-size: 8px;
   }
-  
+  .header-section {
+    font-size: 12px;
+  }
 }
