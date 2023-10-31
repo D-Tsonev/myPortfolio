@@ -32,9 +32,9 @@ This project will demonstrate the practical application of HTML and CSS skills w
 - **CSS3**
 - **Git and GitHub**
 
-<p>Link to  <a href="https://github.com/D-Tsonev/myPortfolio">GitHub Page</a><p>
+<p>Link to  <a href="https://github.com/D-Tsonev/myPortfolio">Repository</a><p>
 
-<p>Link to  <a href="https://d-tsonev.github.io/myPortfolio/">Repository</a><p>
+<p>Link to  <a href="https://d-tsonev.github.io/myPortfolio/">GitHub Page</a><p>
 
 
 ![](./assets/images/screencapture.png)
